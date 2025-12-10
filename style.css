@@ -116,6 +116,7 @@ header {
         font-size: 22px;
         text-shadow: 0 0 8px black;
     }
+
 .container {
     width: 80%;
     margin: 20px auto;
@@ -124,6 +125,103 @@ header {
 
 .products-section {
     margin-top: 40px;
+}
+
+best-sellers-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #4a3584;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.about-banner {
+    width: 100%;
+    height: 220px;
+    background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 25px 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #4a3584;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.icon-box {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+    .icon-box span {
+        font-size: 50px;
+    }
+
+    .icon-box h4 {
+        margin: 10px 0 5px;
+        color: #4a3584;
+    }
+
+.team-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #4a3584;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.team-card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+    .team-card img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+.best-sellers-title::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 4px;
+    background: #6a4caf;
+    margin: 10px auto 0;
+    border-radius: 5px;
 }
 
 .item-grid {
@@ -144,8 +242,10 @@ header {
     .item img {
         width: 100%;
         height: 230px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 6px;
+        background-color: white;
+        padding: 10px;
     }
 
     .item button {
@@ -156,6 +256,10 @@ header {
         border: none;
         border-radius: 5px;
     }
+
+        .item button:hover {
+            background: #4a3584;
+        }
 
 .promo-box {
     background: white;
